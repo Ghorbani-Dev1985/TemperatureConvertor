@@ -44,7 +44,11 @@ if ( $.title === "°F به °C") {
   ConvertorInput.focus();
 }
 };
-
+function ResetAll() {
+  ConvertorInput.value = "";
+  ConvertorResult.innerHTML = "";
+  ChangeUnitFlag = true;
+};
 
 //EventListener
 ConvertBtn.addEventListener('click' , TempConvert)
@@ -54,3 +58,4 @@ ConvertorInput.addEventListener('keydown' , (e) => {
   }
 })
 ChangeUnitBtn.addEventListener('click' , ChangeUnit)
+ResetBtn.addEventListener('click' , ResetAll)
