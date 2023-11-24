@@ -402,12 +402,24 @@ input::placeholder{
 .Result__Wrapper{
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
   border-radius: 10px;
   padding: 12px;
   margin: 30px 0;
   background-color: #fff;
   color: var(--color2);
   border-right: 6px solid var(--color2);
+}
+.Result__Wrapper__Error{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 30px 0;
+  background-color: #fff;
+  color: #f43f5e;
+  border-right: 6px solid #f43f5e;
 }
 .btns__wrapper{
 	width: 100%;
@@ -450,6 +462,9 @@ input::placeholder{
     .btn{
     width: 100%;
     margin-bottom: 30px;
+    }
+    .Result__Wrapper{
+      line-height: 2.3rem;
     }
 }
 @media (min-width: 500px) {
